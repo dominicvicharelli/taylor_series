@@ -13,6 +13,7 @@ Description: See how closely elementary functions are approximated by their
 import matplotlib.pyplot as plt
 import plotFunc
 import plotInit
+import sys
 
 
 def update_slider(val):
@@ -33,7 +34,6 @@ def update_slider(val):
         exp_approx.plot_exp_approx(int(val))
     ax.legend()
     fig.canvas.draw_idle()
-    plt.savefig(f"test_{val}.png")
 
 
 def update_graph(label):
@@ -67,7 +67,18 @@ fig, ax = plotInit.init_plot()
 slider = plotInit.create_slider()
 radio = plotInit.create_radio()
 
-interval = 6
+if len(sys.argv) == 2:
+	try:
+		interval = int(sys.argv[1])
+	except ValueError as v_error:
+		sys.stderr.write("Interval must be either 2, 4, 6, or 8 for best results.\n")
+		raise v_error
+	if (interval < 2) or (interval > 8) or (interval % 2 != 0):
+		raise Exception("Interval must be either 2, 4, 6, or 8 for best results.\n")
+else:
+	interval = 4
+
+ 
 
 trig_function = plotFunc.PlotBaseTrig(ax, interval)
 trig_approx = plotFunc.PlotTaylorTrig(ax, interval)

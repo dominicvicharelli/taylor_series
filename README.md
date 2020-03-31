@@ -17,11 +17,9 @@ Download MatPlotLib from the command line using pip:
 ``` pip install -U matplotlib ```
 
 From the command line, navigate to local folder which contains project and simply execute main.py:
-```python main.py```
+```python main.py [interval]```
+* For best graphing results, interval must be 2, 4, 6, or 8 if specified. By default, interval is set to 4.
 
-### Optional
-
-Change the interval of the graph by editing the 'interval' variable in main.py. Note that interval must be a positive even integer. 
 
 ## Screenshots
 ![Sine wave gif](https://github.com/dominicvicharelli/taylor_series/raw/master/gifs/sin.gif)
