@@ -7,4 +7,25 @@ from the bottom up, making it understandable to anyone who has the slightest
 exposure to basic calculus. The python project uses the MatPlotLib library
 to plot an interactive Taylor Series graph for a few elementary functions.
 
+## Getting Started
 
+Perform the following steps for a local, interactive copy of the project. Otherwise, screenshots of the interactive graph are posted at the end of this file. 
+
+Clone the repository with the url: `https://github.com/dominicvicharelli/taylor_series.git`
+
+Download MatPlotLib from the command line using pip:
+``` pip install -U matplotlib ```
+
+From the command line, navigate to local folder which contains project and simply execute main.py:
+```python main.py```
+
+### Optional
+
+Change the interval of the graph by editing the 'interval' variable in main.py. Note that interval must be a positive even integer. 
+
+## Screenshots
+![Sine wave gif](https://github.com/dominicvicharelli/taylor_series/raw/master/gifs/sin.gif)
+
+![Cosine wave gif](https://github.com/dominicvicharelli/taylor_series/raw/master/gifs/cos.gif)
+
+![e^x gif](https://github.com/dominicvicharelli/taylor_series/raw/master/gifs/e.gif)

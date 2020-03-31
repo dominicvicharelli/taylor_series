@@ -33,6 +33,7 @@ def update_slider(val):
         exp_approx.plot_exp_approx(int(val))
     ax.legend()
     fig.canvas.draw_idle()
+    plt.savefig(f"test_{val}.png")
 
 
 def update_graph(label):
@@ -60,6 +61,7 @@ def update_graph(label):
     fig.canvas.draw_idle()
 
 
+
 # initialize figure, axes, slider, and radio
 fig, ax = plotInit.init_plot()
 slider = plotInit.create_slider()
@@ -79,5 +81,7 @@ trig_approx.plot_sine_approx(1)
 slider.on_changed(update_slider)
 radio.on_clicked(update_graph)
 ax.legend()
+
 plt.show()
+
 
