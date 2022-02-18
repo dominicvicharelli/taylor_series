@@ -23,8 +23,8 @@ May need to install matplotlib library using command:
 
 
 ## Screenshots
+![e^x gif](https://github.com/dominicvicharelli/taylor_series/raw/master/gifs/e.gif)
+
 ![Sine wave gif](https://github.com/dominicvicharelli/taylor_series/raw/master/gifs/sin.gif)
 
 ![Cosine wave gif](https://github.com/dominicvicharelli/taylor_series/raw/master/gifs/cos.gif)
-
-![e^x gif](https://github.com/dominicvicharelli/taylor_series/raw/master/gifs/e.gif)
